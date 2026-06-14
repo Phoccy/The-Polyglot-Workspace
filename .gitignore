@@ -10,6 +10,9 @@ Backends/03-CSharp/bin/
 Backends/03-CSharp/obj/
 .vs/
 
+# VS Code specific settings (ADD THIS NOW)
+.vscode/
+
 # OS specific files
 .DS_Store
 Thumbs.db
