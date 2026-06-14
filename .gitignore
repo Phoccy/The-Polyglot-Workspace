@@ -1,0 +1,15 @@
+# Databases
+Database/todo.db
+
+# Java compiled outputs and drivers
+Backends/04-Java/bin/
+*.jar
+
+# C# build outputs and IDE files
+Backends/03-CSharp/bin/
+Backends/03-CSharp/obj/
+.vs/
+
+# OS specific files
+.DS_Store
+Thumbs.db

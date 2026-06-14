@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyglot Workspace // Universal UI</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="app-workspace">
+        
+        <div id="errorBanner" class="status-banner-error view-hidden" role="alert">
+            <span id="errorMessageText">System Error Context</span>
+            <button id="closeErrorBtn" class="btn-text-only">✕</button>
+        </div>
+
+        <header class="app-header">
+            <h1>Engineered Todo</h1>
+            <p>Universal Decoupled Client Architecture</p>
+        </header>
+
+        <form id="todoForm" class="todo-form" novalidate>
+            <div class="form-group">
+                <label for="titleInput">Task Title</label>
+                <input type="text" id="titleInput" class="form-input" required placeholder="e.g., Implement native database connection pool">
+            </div>
+            
+            <div class="form-group">
+                <label for="descInput">Description <span class="label-optional">(Optional)</span></label>
+                <textarea id="descInput" class="form-input form-textarea" rows="2" placeholder="Provide architectural scope, technical specs, or execution constraints..."></textarea>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dateInput">Due Date <span class="label-optional">(Optional)</span></label>
+                    <input type="date" id="dateInput" class="form-input">
+                </div>
+                <div class="form-group form-alignment-bottom">
+                    <button type="submit" id="submitBtn" class="btn-submit">Add Target Requirement</button>
+                </div>
+            </div>
+        </form>
+
+        <section class="filter-bar" aria-label="Task filter states">
+            <button class="btn-filter active" data-filter="all">All Targets</button>
+            <button class="btn-filter" data-filter="active">Active</button>
+            <button class="btn-filter" data-filter="completed">Completed</button>
+        </section>
+
+        <main id="todoContainer" class="todo-list" aria-live="polite">
+
+        </main>
+        
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
